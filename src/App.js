@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Profile from "./Profile";
+import Billing from "./Billing";
+import OrderDetails from "./OrderDetails";
+import PaymentConfirmation from "./PaymentConfirmation";
+import background from "./images/background.png";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App p-5" style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat',  backgroundSize: '100%' }}>
+         <Routes>
+          <Route path="/" element={<Profile />} />
+          <Route path="/billing" element={<Billing />} />
+          <Route path="/billing/details" element={<OrderDetails />} />
+          <Route path="/payment-confirmation" element={<PaymentConfirmation />} />
+         </Routes>
+      </div>
+    </Router>
+    
   );
 }
 
