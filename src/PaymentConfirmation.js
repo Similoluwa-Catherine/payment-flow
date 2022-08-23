@@ -6,7 +6,7 @@ const PaymentConfirmation = () => {
 
     return (
       <div className="confirmation container-fluid d-flex justify-content-center row">
-          <div className="col-xl-8 col-md-8">
+          <div className="col-xl-6 col-md-8">
             <div className="card confirmation-card">
               <div className="card-body p-4">
                 <div className="d-flex justify-content-center pb-1">

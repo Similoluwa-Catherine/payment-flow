@@ -26,7 +26,7 @@ const Profile = () => {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             name="name"
-                            className="form-control"/>    
+                            className="form-control input"/>    
                         </div>
                         <div className="col-md-12 form-group mt-4">
                             <label className="form-label fw-bold">Email Address<span
@@ -36,7 +36,7 @@ const Profile = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 name="email"
-                                className="form-control"/>    
+                                className="form-control input"/>    
                         </div>
                         <div className="col-md-12 form-group mt-4">
                             <label className="form-label fw-bold">Address 1</label>
@@ -45,7 +45,7 @@ const Profile = () => {
                                 placeholder="The address of the user goes here"
                                 onChange={(e) => setAddress(e.target.value)}
                                 name="address1"
-                                className="form-control"/>    
+                                className="form-control input"/>    
                         </div>
                         <div className="col-md-12 form-group mt-4">
                             <label className="form-label fw-bold">Address 2</label>
@@ -54,7 +54,7 @@ const Profile = () => {
                                 placeholder="and here"
                                 onChange={(e) => setAddress(e.target.value)}
                                 name="address2"
-                                className="form-control"/>    
+                                className="form-control input"/>    
                         </div>
                         <div className="row mt-5">
                             <div className="col-md-6 form-group">
@@ -63,12 +63,12 @@ const Profile = () => {
                                     value={localGovernment}
                                     onChange={(e) => setLocalGovernment(e.target.value)}
                                     name="localGovernment"
-                                    className="form-control"/>    
+                                    className="form-control input"/>    
                             </div>
                             <div className="col-md-6 form-group">
                                 <label className="form-label fw-bold">State</label>
                                 <select 
-                                    className="form-select"
+                                    className="form-select select"
                                     onChange={(e) => setState(e.target.value)}>
                                     <option>
                                         {state}

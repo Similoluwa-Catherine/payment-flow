@@ -25,13 +25,13 @@ const Billing = () => {
                         value={cardName}
                         onChange={(e) => setCardName(e.target.value)}
                         name="name"
-                        className="form-control"/>    
+                        className="form-control input"/>    
                       </div>
                       <div className="col-md-12 form-group mt-4">
                         <label className="form-label fw-bold">Card Type<span
                         className="text-danger ms-2">*</span></label>
                         <select 
-                            className="form-select"
+                            className="form-select select"
                             onChange={(e) => setCardType(e.target.value)}>
                             <option>
                                 {cardType}
@@ -46,7 +46,7 @@ const Billing = () => {
                             value={cardDetails}
                             onChange={(e) => setcardDetails(e.target.value)}
                             name="name"
-                            className="form-control"/>    
+                            className="form-control input"/>    
                         </div>
                         <div className="col-md-4 form-group">
                             <label className="form-label fw-bold">Expiry Date<span
@@ -55,7 +55,7 @@ const Billing = () => {
                             value={expiryDate}
                             onChange={(e) => setExpiryDate(e.target.value)}
                             name="name"
-                            className="form-control"/>    
+                            className="form-control input"/>    
                         </div>
                         <div className="col-md-2 form-group">
                             <label className="form-label fw-bold">CVV<span
@@ -64,7 +64,7 @@ const Billing = () => {
                             value={cvv}
                             onChange={(e) => setCvv(e.target.value)}
                             name="name"
-                            className="form-control"/>    
+                            className="form-control input"/>    
                         </div>
                       </div>
                         
