@@ -1,8 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Open Sans';
 }
 
 h4 {
@@ -33,10 +33,6 @@ a {
     text-decoration: none;
     font-weight: 700;
     font-size: .85rem;
-}
-
-.nav-link {
-    color: hsl(0, 0%, 74%);
 }
 
 .card {
