@@ -20,7 +20,7 @@ const OrderDetails = () => {
                   <tbody>
                     <tr>
                       <td>Data Science and Usability</td>
-                      <td className="fw-bold">50,000.00</td>
+                      <td className="fw-bold ps-3">50,000.00</td>
                     </tr>
                     <tr>
                       <td className="pt-3">Shipping</td>
@@ -33,7 +33,7 @@ const OrderDetails = () => {
                 <hr className="line" />
                 <div className="total d-flex justify-content-between border mb-2 mt-4 me-4 ms-2">
                   <p className="ps-2 mt-3">Total</p>
-                  <p className="pe-4 mt-3 fw-bold">50,000.00</p>
+                  <p className="mt-3 fw-bold">50,000.00</p>
                 </div>
               </div>
             </div>

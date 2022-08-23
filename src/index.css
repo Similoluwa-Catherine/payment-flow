@@ -5,8 +5,22 @@ body {
     font-family: 'Open Sans';
 }
 
+ul {
+    border-bottom: 1px solid;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+/* ul:active {
+    border-bottom: 2px solid red;
+} */
+
 h4 {
     color: hsl(229, 28%, 43%);
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .email-note {
@@ -86,6 +100,10 @@ a {
 .table, .total {
     color: hsl(229, 28%, 43%);
     font-size: .8rem;
+}
+
+.total {
+    padding-right: 30px;
 }
 
 .line {

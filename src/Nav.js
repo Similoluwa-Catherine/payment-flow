@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <header>
-      <nav className="mt-4">
-        <h4 className="pt-5">Complete your Purchase</h4>
-        <ul className="d-flex justify-content-between list-unstyled mt-3 mb-5">
+    <header className="pt-5">
+      <nav>
+        <h4>Complete your Purchase</h4>
+        <ul className="d-flex justify-content-between list-unstyled mb-4">
           <li>
             <NavLink className="nav-link fw-bold" to={`/`}
-            style={({ isActive }) => ({ color: isActive ? 'hsl(28, 87%, 62%)' : 'hsl(0, 0%, 74%)' })}
+            style={({ isActive }) => ({ color: isActive ? 'hsl(28, 87%, 62%)' : 'hsl(0, 0%, 74%)'})}
             >
               Personal Info
             </NavLink>
