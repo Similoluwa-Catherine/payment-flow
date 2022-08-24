@@ -14,7 +14,7 @@ const Billing = () => {
     <div className="container-fluid d-flex justify-content-center row">
       <div className="col-xl-8 col-md-8">
         <Nav />
-        <div className="main-content">
+        <div className="main-content mt-4">
           <form>
             <div className="column col-sm">
               <div className="col-md-12 form-group">
@@ -53,7 +53,7 @@ const Billing = () => {
                     className="form-control input"
                   />
                 </div>
-                <div className="col-md-4 form-group">
+                <div className="col-md-4 form-group mt-4 mt-lg-0 mt-md-0">
                   <label className="form-label fw-bold">
                     Expiry Date<span className="text-danger ms-2">*</span>
                   </label>
@@ -65,7 +65,7 @@ const Billing = () => {
                     className="form-control input"
                   />
                 </div>
-                <div className="col-md-2 form-group">
+                <div className="col-md-2 form-group mt-4 mt-lg-0 mt-md-0">
                   <label className="form-label fw-bold">
                     CVV<span className="text-danger ms-2">*</span>
                   </label>
@@ -82,7 +82,7 @@ const Billing = () => {
           </form>
           <div>
             <Link to={`/billing/details`}>
-              <button className="fw-bold me-5" type="button">
+              <button className="fw-bold me-lg-5 me-md-5 me-3" type="button">
                 Next
               </button>
             </Link>

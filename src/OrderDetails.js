@@ -6,12 +6,12 @@ const OrderDetails = () => {
     <div className="container-fluid d-flex justify-content-center row">
       <div className="col-xl-6 col-md-8">
         <Nav />
-        <div className="main-content">
+        <div className="main-content mt-5">
           <div className="card">
             <div className="card-header">
-              <div className="table-head pe-4 fw-bold ps-4 d-flex justify-content-between">
-                <p>Item Name</p>
-                <p className="pe-5">&#8358; Price</p>
+              <div className="table-head fw-bold ps-4 d-flex justify-content-between">
+                <p className="ps-2">Item Name</p>
+                <p className="price ps-5">&#8358; Price</p>
               </div>
             </div>
             <div className="card-body">
@@ -40,7 +40,7 @@ const OrderDetails = () => {
           </div>
           <div>
             <Link to={`/payment-confirmation`}>
-              <button className="fw-bold me-5" type="button">
+              <button className="fw-bold me-lg-5 me-md-5 me-3" type="button">
                 Pay
               </button>
             </Link>

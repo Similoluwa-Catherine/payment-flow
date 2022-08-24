@@ -5,21 +5,17 @@ body {
     font-family: 'Open Sans';
 }
 
-ul {
+.nav-container {
     border-bottom: 1px solid;
 }
 
-li {
+.nav-link {
     margin-bottom: 20px;
 }
 
-/* ul:active {
-    border-bottom: 2px solid red;
-} */
-
 h4 {
     color: hsl(229, 28%, 43%);
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-weight: 700;
 }
 
@@ -90,7 +86,7 @@ a {
 .table-head {
     margin-top: 5px;
     margin-bottom: -10px;
-    /* padding-left: 33px; */
+    padding-right: 77px;
 }
 
 .table-footer {
@@ -110,4 +106,14 @@ a {
     margin-top: -1px;
 }
 
+@media (min-width: 1024px)  {
+    .total {
+        padding-right: 53px;
+    }
+
+    .table-head {
+        padding-right: 98px;
+    }
+
+ }
 
