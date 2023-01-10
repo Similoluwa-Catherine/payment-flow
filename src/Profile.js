@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import Nav from "./Nav";
 
 const Profile = () => {
-  const [name, setName] = useState("Opara Linus Ahmed");
-  const [email, setEmail] = useState("OparaLinusAhmed@devmail.com");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [address, setAddress] = useState({
     address1: "",
     address2: "",
   });
-  const [localGovernment, setLocalGovernment] = useState("Surulere");
-  const [state, setState] = useState("Lagos");
+  const [localGovernment, setLocalGovernment] = useState("");
+  const [state, setState] = useState("");
 
   return (
     <div className="container-fluid d-flex justify-content-center row">
@@ -49,7 +49,6 @@ const Profile = () => {
                 <input
                   type="text"
                   value={address.address1}
-                  placeholder="The address of the user goes here"
                   onChange={(e) => setAddress(e.target.value)}
                   name="address1"
                   className="form-control input"
@@ -60,7 +59,6 @@ const Profile = () => {
                 <input
                   type="text"
                   value={address.address2}
-                  placeholder="and here"
                   onChange={(e) => setAddress(e.target.value)}
                   name="address2"
                   className="form-control input"
@@ -79,12 +77,13 @@ const Profile = () => {
                 </div>
                 <div className="col-md-6 form-group mt-4 mt-lg-0 mt-md-0">
                   <label className="form-label fw-bold">State</label>
-                  <select
-                    className="form-select select"
+                  <input
+                    type="text"
+                    value={state}
                     onChange={(e) => setState(e.target.value)}
-                  >
-                    <option>{state}</option>
-                  </select>
+                    name="state"
+                    className="form-control input"
+                  />
                 </div>
               </div>
             </div>

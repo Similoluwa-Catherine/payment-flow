@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import Nav from "./Nav";
 
 const Billing = () => {
-  // const Navigate = useNavigate();
-  const [cardName, setCardName] = useState("Opara Linus Ahmed");
-  const [cardType, setCardType] = useState("Visa");
-  const [cardDetails, setcardDetails] = useState("44960 44960 44960 44960");
-  const [expiryDate, setExpiryDate] = useState("04 / 23");
-  const [cvv, setCvv] = useState("923");
+  const [cardName, setCardName] = useState("");
+  const [cardType, setCardType] = useState("");
+  const [cardDetails, setCardDetails] = useState("");
+  const [expiryDate, setExpiryDate] = useState("");
+  const [cvv, setCvv] = useState("");
 
   return (
     <div className="container-fluid d-flex justify-content-center row">
@@ -35,9 +34,13 @@ const Billing = () => {
                 </label>
                 <select
                   className="form-select select"
+                  value={cardType}
                   onChange={(e) => setCardType(e.target.value)}
                 >
-                  <option>{cardType}</option>
+                  <option selected>Select card type</option>
+                  <option>Visa</option>
+                  <option>Master Card</option>
+                  <option>Verve</option>
                 </select>
               </div>
               <div className="row mt-5">
@@ -48,7 +51,7 @@ const Billing = () => {
                   <input
                     type="text"
                     value={cardDetails}
-                    onChange={(e) => setcardDetails(e.target.value)}
+                    onChange={(e) => setCardDetails(e.target.value)}
                     name="name"
                     className="form-control input"
                   />
@@ -95,4 +98,3 @@ const Billing = () => {
 };
 export default Billing;
 
-// onClick={() => Navigate(/payment-confirmation)}
