@@ -37,7 +37,7 @@ const Billing = () => {
                   value={cardType}
                   onChange={(e) => setCardType(e.target.value)}
                 >
-                  <option selected>Select card type</option>
+                  <option defaultValue={cardType}>Select card type</option>
                   <option>Visa</option>
                   <option>Master Card</option>
                   <option>Verve</option>
